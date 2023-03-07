@@ -8,6 +8,7 @@ try:
     newFile = open("manipulatedURLdataset.csv", "w")
     lines = file.readlines()
     
+    newFile.write(lines[0])
     for ii in range(1, len(lines)): 
         words = lines[ii].split(",")
         words[1] = re.search(regex, words[1]).group().lstrip("/").rstrip("<")
