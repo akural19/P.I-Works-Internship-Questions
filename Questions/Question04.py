@@ -1,6 +1,4 @@
 import numpy as np
-import matplotlib as mpl
-import matplotlib.pyplot as plt
 
 try: 
     file = open("country_vaccination_stats.csv", "r")
